@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('BGKuis.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+    }
+    .navbar {
+        background-color: black;
+        overflow: hidden;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .navbar a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color: white;
+        color: black;
+    }
+    .container {
+        padding-top: 100px;
+        text-align: center;
+    }
+    .card {
+        background-color: black;
+        padding: 20px;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 10px;
+    }
+    .card img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .button {
+        background-color: greenyellow;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+    }
+    .button:hover {
+        background-color: green;
+    }
+    .table-container {
+        background-color: black;
+        padding: 20px;
+        margin: 20px auto;
+        width: 60%;
+        border-radius: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid white;
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+        color: white;
+    }
+    th {
+        background-color: gray;
+    }
+    td {
+        background-color: grey;
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#jadwal">Jadwal</a>
+    <a href="#profil">Home</a>
+</div>
+
+<div id="profil" class="container">
+    <h2>Halaman Utama</h2>
+    <div class="card">
+        <img src=Profil.jpg alt="Foto Profil">
+        <h3>Lutfi Harya Ferdian</h3>
+        <p>NPM: 2317051096</p>
+        <p>Jurusan: Ilmu Komputer</p>
+        <p>Universitas Lampung</p>
+        <button class="button">Lihat Jadwal</button>
+    </div>
+</div>
+
+<div id="jadwal" class="container">
+    <h2>Halaman Jadwal Kuliah</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Jam</th>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                <th>Kamis</th>
+                <th>Jumat</th>
+            </tr>
+            <tr>
+                <td>07:30 - 08.40</td>
+                <td> </td>
+                <td>PDT</td>
+                <td>PEMWEB</td>
+                <td> </td>
+                <td>ML RESP</td>
+            </tr>
+            <tr>
+                <td>08.50 - 10:00</td>
+                <td>ADSI</td>
+                <td>PEMDEK</td>
+                <td> </td>
+                <td>PEMWEB</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>10:10 - 11.20</td>
+                <td>AI</td>
+                <td>PEMDEK RESP</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>12:30 - 13:40</td>
+                <td>TI</td>
+                <td>ML</td>
+                <td>TAM</td>
+                <td>ADSI</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>13:50 - 15:00</td>
+                <td>AI RESP</td>
+                <td>TAM RESP</td>
+                <td> </td>
+                <td>PDT RESP</td>
+                <td> </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
